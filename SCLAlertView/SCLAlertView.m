@@ -165,6 +165,7 @@ SCLTimerDisplay *buttonTimer;
     self.windowWidth = windowWidth;
     self.windowHeight = 178.0f;
     self.shouldDismissOnTapOutside = NO;
+    self.shouldDismissOnTapButtons = YES;
     self.usingNewWindow = NO;
     self.canAddObservers = YES;
     self.keyboardIsVisible = NO;
@@ -759,7 +760,7 @@ SCLTimerDisplay *buttonTimer;
         NSLog(@"Unknown action type for button");
     }
     
-    if([self isVisible])
+    if([self isVisible] && self.shouldDismissOnTapButtons)
     {
         [self hideView];
     }

@@ -128,6 +128,13 @@ typedef NS_ENUM(NSInteger, SCLAlertViewBackground)
  */
 @property (assign, nonatomic) BOOL shouldDismissOnTapOutside;
 
+/** Dismiss on tap buttons
+ *
+ * A boolean value that determines whether to dismiss when tapping the buttons in the SCLAlertView.
+ * (Default: NO)
+ */
+@property (assign, nonatomic) BOOL shouldDismissOnTapButtons;
+
 /** Sound URL
  *
  * Holds the sound NSURL path.
